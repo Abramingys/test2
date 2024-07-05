@@ -1,0 +1,232 @@
+.banner {
+  background-color: var(--ligth);
+}
+.banner__content {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.banner__background-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.banner__informantion {
+  z-index: 10;
+  max-width: 745px;
+}
+.banner__title {
+  margin-bottom: 30px;
+  text-align: justify;
+  letter-spacing: 0.01em;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 64.8px;
+}
+.banner__description {
+  margin-bottom: 180px;
+  letter-spacing: 0.01em;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27.9px;
+}
+
+.form {
+  position: relative;
+  z-index: 10;
+  max-width: 487px;
+  padding: 35px 40px 40px 40px;
+  border-radius: 15px;
+  background-color: var(--white);
+}
+.form__title {
+  margin-bottom: 10px;
+  letter-spacing: 0.01em;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 41.6px;
+}
+.form__description {
+  margin-bottom: 25px;
+  letter-spacing: 0.01em;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24.8px;
+}
+.form__group {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  margin-bottom: 27px;
+  gap: 5px;
+}
+.form__group-last {
+  margin-bottom: 40px;
+}
+.form__group-checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 26px;
+  gap: 15px;
+}
+.form__group-checkbox span {
+  text-decoration: underline;
+}
+.form__label {
+  letter-spacing: 0.01em;
+  font-weight: 600;
+  line-height: 24.8px;
+}
+.form__label-checkbox {
+  letter-spacing: 0.01em;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21.7px;
+}
+.form__input {
+  width: 100%;
+  padding: 12.5px 20px;
+  border: 1px solid rgb(229, 229, 229);
+  border-radius: 10px;
+  background-color: var(--inpcolor);
+}
+.form__checkbox {
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgb(229, 229, 229);
+  border-radius: 5px 0px 0px 0px;
+  background-color: var(--inpcolor);
+}
+.form__button {
+  padding: 12.5px 136px;
+}
+
+@media (max-width: 1440px) {
+  .banner__background-img {
+    width: 298px;
+  }
+  .banner__title {
+    margin-bottom: 20px;
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .banner__description {
+    margin-bottom: 120px;
+    font-size: 16px;
+    line-height: 24.8px;
+  }
+  .banner__informantion {
+    max-width: 555px;
+  }
+  .form {
+    max-width: 360px;
+    padding: 25px 30px 30px 30px;
+    letter-spacing: 0.01em;
+  }
+  .form__title {
+    margin-bottom: 8px;
+    font-size: 24px;
+    line-height: 31.2px;
+  }
+  .form__description {
+    margin-bottom: 15px;
+    font-size: 15px;
+    line-height: 23.25px;
+  }
+  .form__group {
+    margin-bottom: 5px;
+  }
+  .form__group-last {
+    margin-bottom: 25px;
+  }
+  .form__group-checkbox {
+    margin-bottom: 20px;
+  }
+  .form__label {
+    font-size: 15px;
+    line-height: 23.25px;
+  }
+  .form__label-checkbox {
+    font-size: 12px;
+    line-height: 18.6px;
+  }
+  .form__button {
+    padding: 10.5px 87px;
+  }
+}
+@media (max-width: 768px) {
+  .banner__title {
+    font-size: 36px;
+    line-height: 43.2px;
+  }
+  .banner__content {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .banner__informantion {
+    max-width: 708px;
+  }
+  .banner__background-img {
+    top: 65%;
+    max-width: 277px;
+    height: 277px;
+  }
+  .banner__description {
+    margin-bottom: 50px;
+  }
+  .form {
+    max-width: 100%;
+  }
+  .form__title {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .form__description {
+    font-size: 14px;
+    line-height: 21.7px;
+  }
+  .form__label {
+    font-size: 14px;
+    line-height: 21.7px;
+  }
+  .form__button {
+    padding: 11px 25px;
+  }
+  .form__wrapper768 {
+    display: flex;
+    justify-content: space-between;
+    gap: 13px;
+  }
+  .form__group-checkbox {
+    margin-bottom: 0;
+  }
+  .form__group-last {
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 320px) {
+  .banner__informantion {
+    max-width: 290px;
+  }
+  .banner__title {
+    margin-bottom: 10px;
+    font-size: 26px;
+    line-height: 31.2px;
+  }
+  .banner__description {
+    margin-bottom: 34px;
+    font-size: 14px;
+    line-height: 21.7px;
+  }
+  .form {
+    padding: 20px;
+  }
+  .form__wrapper768 {
+    flex-direction: column;
+  }
+  .form__group-last {
+    margin-bottom: 20px;
+  }
+}/*# sourceMappingURL=banner.css.map */

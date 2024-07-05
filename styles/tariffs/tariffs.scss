@@ -1,0 +1,254 @@
+.tariffs {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 51px;
+  }
+  &__title {
+    letter-spacing: 0.01em;
+
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 50.4px;
+  }
+  &__list {
+    display: flex;
+
+    gap: 30px;
+  }
+  &__item {
+    flex: 1 1 auto;
+
+    max-width: 357px;
+
+    border: 1px solid rgba(229, 229, 229, 1);
+    border-radius: 15px;
+    &-header {
+      position: relative;
+
+      max-height: 250px;
+      padding: 10px 0 25px 10px;
+
+      border-radius: 15px 15px 0 0;
+      background-color: var(--ligth);
+      &_back {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+      }
+    }
+    &-content {
+      display: flex;
+      flex-direction: column;
+
+      padding: 25px 30px;
+
+      gap: 20px;
+    }
+    &-button {
+      padding: 12.5px 30px;
+    }
+    &-labels {
+      display: flex;
+
+      margin-bottom: 165px;
+
+      gap: 5px;
+    }
+    &-label {
+      padding: 2px 8px;
+
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+
+      border-radius: 5px;
+      background-color: var(--white);
+
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 18.6px;
+    }
+    &-title {
+      margin-left: 20px;
+
+      letter-spacing: 0.01em;
+
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 28.6px;
+    }
+    &-price {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &-value {
+      letter-spacing: 0.01em;
+
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 28.6px;
+      &_crossed {
+        text-decoration: line-through;
+
+        font-size: 16px;
+        line-height: 16px;
+      }
+    }
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+
+    letter-spacing: 0.01em;
+
+    gap: 30px;
+
+    &-item {
+      display: flex;
+      justify-content: space-between;
+
+      border-bottom: 1px dashed rgba(229, 229, 229, 1);
+    }
+    & :last-child {
+      border-bottom: 0;
+    }
+    &-description {
+      line-height: 24.8px;
+    }
+    &-rate {
+      font-weight: 600;
+      line-height: 24.8px;
+    }
+  }
+}
+@media (max-width: 1440px) {
+  .tariffs {
+    &-container {
+      padding: 98px 150px;
+    }
+    &__title {
+      font-size: 31px;
+      line-height: 37.2px;
+    }
+    &__header {
+      margin-bottom: 34px;
+    }
+    &__item {
+      max-width: 263px;
+      &-value {
+        font-size: 20px;
+        line-height: 26px;
+        &_crossed {
+          font-size: 15px;
+          line-height: 15px;
+        }
+      }
+      &-button {
+        padding: 10.5px 20px;
+      }
+      &-title {
+        margin-left: 10px;
+
+        font-size: 20px;
+        line-height: 26px;
+      }
+      &-header {
+        padding: 10px 0 15px 10px;
+        &_back {
+          width: 100px;
+        }
+      }
+      &-content {
+        padding: 15px 20px 20px 20px;
+      }
+      &-labels {
+        margin-bottom: 110px;
+      }
+    }
+    &__details {
+      gap: 17px;
+      &-description {
+        font-size: 15px;
+        line-height: 23.25px;
+      }
+      &-rate {
+        font-size: 15px;
+        line-height: 23.25px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .tariffs {
+    &-container {
+      position: relative;
+
+      padding: 75px 30px;
+    }
+    &__header {
+      font-size: 28px;
+      line-height: 33.6px;
+    }
+    &__item {
+      max-width: 344px;
+      &-button {
+        padding: 11px 25px;
+      }
+      &-title {
+        font-size: 18px;
+        line-height: 23.4px;
+      }
+      &-value {
+        font-size: 18px;
+        line-height: 23.4px;
+        &_crossed {
+          font-size: 14px;
+          line-height: 14px;
+        }
+      }
+    }
+    &__details {
+      // gap: 8px;
+      &-description {
+        font-size: 14px;
+        line-height: 21.7px;
+      }
+      &-rate {
+        font-size: 14px;
+        line-height: 21.7px;
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .tariffs {
+    &-container {
+      padding: 60px 20px 92px;
+    }
+    &__header {
+      margin-bottom: 25px;
+    }
+    &__title {
+      font-size: 22px;
+      line-height: 26.4px;
+    }
+    &__item {
+      &-labels {
+        margin-bottom: 117px;
+      }
+      &-header {
+        padding: 10px 0 10px 10px;
+      }
+      &-content {
+        padding: 15px;
+      }
+    }
+  }
+}

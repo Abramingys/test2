@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  color: var(--grey);
+
+  font-family: 'Gilroy';
+  font-weight: normal;
+  font-style: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p,
+ul,
+li,
+a,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  display: block;
+
+  text-decoration: none;
+
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+img {
+  display: block;
+
+  max-width: 100%;
+}
+.page-container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.section-container {
+  padding: 120px 200px;
+}
+
+.u-divider {
+  width: 1px;
+  height: 90px;
+  margin: 0 35px;
+
+  background-color: var(--divider);
+}
+.slider-button {
+  padding: 21px 23px;
+
+  border: 1px solid var(--ligth);
+  border-radius: 10px;
+  background-color: var(--white);
+}
+.slider-icon {
+  width: 4px;
+  height: 8px;
+}
+
+.page-button {
+  color: var(--white);
+  border: 0;
+  border-radius: 10px;
+  background-color: var(--grey);
+
+  font-weight: 600;
+  line-height: 24.8px;
+}
+.error-message {
+  color: red;
+
+  font-size: 12px;
+}
+.success-message {
+  color: green;
+
+  font-size: 12px;
+}
+.owl-dots {
+  display: none;
+}
+
+:root {
+  --grey: rgba(153, 153, 153, 1);
+  --divider: rgba(229, 229, 229, 1);
+  --ligth: rgba(240, 240, 240, 1);
+  --white: rgba(255, 255, 255, 1);
+  --inpcolor: rgba(248, 249, 251, 1);
+}
+
+@media (max-width: 1440px) {
+  .page-container {
+    max-width: 1440px;
+  }
+  .section-container {
+    padding: 75px 150px;
+  }
+  .u-divider {
+    height: 70px;
+    margin: 0 24px;
+  }
+  .page-button {
+    font-size: 15px;
+    line-height: 23.25px;
+  }
+  .slider-button {
+    padding: 18px 20px;
+  }
+}
+@media (max-width: 768px) {
+  .section-container {
+    padding: 50px 30px 83px;
+  }
+  .page-container {
+    max-width: 768px;
+  }
+  .u-divider {
+    display: none;
+  }
+  .slider {
+    display: none;
+  }
+  .page-button {
+    font-size: 14px;
+    line-height: 21.7px;
+  }
+  .owl-dots {
+    position: absolute;
+    right: 0;
+    bottom: -55px;
+    left: 0;
+
+    display: block;
+  }
+  .owl-carousel {
+    position: static;
+  }
+}
+
+@media (max-width: 320px) {
+  .section-container {
+    padding: 30px 10px 83px 15px;
+  }
+}

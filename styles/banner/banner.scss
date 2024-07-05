@@ -1,0 +1,279 @@
+.banner {
+  background-color: var(--ligth);
+  &__content {
+    position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__background-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+  }
+  &__informantion {
+    z-index: 10;
+
+    max-width: 745px;
+  }
+  &__title {
+    margin-bottom: 30px;
+
+    text-align: justify;
+    letter-spacing: 0.01em;
+
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 64.8px;
+  }
+
+  &__description {
+    margin-bottom: 180px;
+
+    letter-spacing: 0.01em;
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27.9px;
+  }
+}
+
+.form {
+  position: relative;
+  z-index: 10;
+
+  max-width: 487px;
+  padding: 35px 40px 40px 40px;
+
+  border-radius: 15px;
+  background-color: var(--white);
+  &__title {
+    margin-bottom: 10px;
+
+    letter-spacing: 0.01em;
+
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 41.6px;
+  }
+  &__description {
+    margin-bottom: 25px;
+
+    letter-spacing: 0.01em;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24.8px;
+  }
+  &__group {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+
+    margin-bottom: 27px;
+
+    gap: 5px;
+    &-last {
+      margin-bottom: 40px;
+    }
+    &-checkbox {
+      display: flex;
+      align-items: center;
+
+      margin-bottom: 26px;
+
+      gap: 15px;
+      & span {
+        text-decoration: underline;
+      }
+    }
+  }
+  &__label {
+    letter-spacing: 0.01em;
+
+    font-weight: 600;
+    line-height: 24.8px;
+    &-checkbox {
+      letter-spacing: 0.01em;
+
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21.7px;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    padding: 12.5px 20px;
+
+    border: 1px solid rgba(229, 229, 229, 1);
+    border-radius: 10px;
+    background-color: var(--inpcolor);
+  }
+
+  &__checkbox {
+    width: 24px;
+    height: 24px;
+
+    border: 1px solid rgba(229, 229, 229, 1);
+    border-radius: 5px 0px 0px 0px;
+    background-color: var(--inpcolor);
+  }
+  &__button {
+    padding: 12.5px 136px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .banner {
+    &__background-img {
+      width: 298px;
+    }
+    &__title {
+      margin-bottom: 20px;
+
+      font-size: 40px;
+      line-height: 48px;
+    }
+    &__description {
+      margin-bottom: 120px;
+
+      font-size: 16px;
+      line-height: 24.8px;
+    }
+    &__informantion {
+      max-width: 555px;
+    }
+  }
+
+  .form {
+    max-width: 360px;
+    padding: 25px 30px 30px 30px;
+
+    letter-spacing: 0.01em;
+
+    &__title {
+      margin-bottom: 8px;
+
+      font-size: 24px;
+      line-height: 31.2px;
+    }
+    &__description {
+      margin-bottom: 15px;
+
+      font-size: 15px;
+      line-height: 23.25px;
+    }
+    &__group {
+      margin-bottom: 5px;
+      &-last {
+        margin-bottom: 25px;
+      }
+      &-checkbox {
+        margin-bottom: 20px;
+      }
+    }
+    &__label {
+      font-size: 15px;
+      line-height: 23.25px;
+      &-checkbox {
+        font-size: 12px;
+        line-height: 18.6px;
+      }
+    }
+    &__button {
+      padding: 10.5px 87px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    &__title {
+      font-size: 36px;
+      line-height: 43.2px;
+    }
+    &__content {
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    &__informantion {
+      max-width: 708px;
+    }
+    &__background-img {
+      top: 65%;
+
+      max-width: 277px;
+      height: 277px;
+    }
+    &__description {
+      margin-bottom: 50px;
+    }
+  }
+
+  .form {
+    max-width: 100%;
+    &__title {
+      font-size: 20px;
+      line-height: 26px;
+    }
+    &__description {
+      font-size: 14px;
+      line-height: 21.7px;
+    }
+    &__label {
+      font-size: 14px;
+      line-height: 21.7px;
+    }
+    &__button {
+      padding: 11px 25px;
+    }
+    &__wrapper768 {
+      display: flex;
+      justify-content: space-between;
+
+      gap: 13px;
+    }
+    &__group {
+      &-checkbox {
+        margin-bottom: 0;
+      }
+      &-last {
+        margin-bottom: 25px;
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .banner {
+    &__informantion {
+      max-width: 290px;
+    }
+    &__title {
+      margin-bottom: 10px;
+
+      font-size: 26px;
+      line-height: 31.2px;
+    }
+    &__description {
+      margin-bottom: 34px;
+
+      font-size: 14px;
+      line-height: 21.7px;
+    }
+  }
+
+  .form {
+    padding: 20px;
+    &__wrapper768 {
+      flex-direction: column;
+    }
+    &__group-last {
+      margin-bottom: 20px;
+    }
+  }
+}

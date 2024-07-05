@@ -1,0 +1,143 @@
+.mm-panel {
+  background-color: var(--white);
+}
+
+.mm-listitem {
+  letter-spacing: 0.01em;
+  color: var(--grey);
+  font-family: Gilroy;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 33.6px;
+}
+.mm-listitem__text {
+  background-color: var(--white) !important;
+}
+
+.mm-listitem:after {
+  inset-inline-end: 32px;
+}
+
+.mm-listitem:nth-last-child(2):after {
+  border: 0;
+}
+
+.mm-btn--next:after {
+  transform: rotate(225deg);
+  inset-inline-end: 40px;
+}
+
+.mm-listitem--opened > .mm-listitem__btn:after {
+  right: 40px;
+  transform: rotate(45deg);
+}
+
+.mm-listview {
+  padding: 20px 0 0 10px;
+  background-color: var(--white);
+}
+
+.mm-listitem--vertical > .mm-panel {
+  padding: 0;
+}
+
+.burger {
+  top: 70px;
+  width: 100%;
+}
+.burger__item:not(:first-child) {
+  padding: 15px 0;
+}
+.burger__item_small {
+  display: none;
+}
+.burger__item-location {
+  display: flex;
+  align-items: center;
+  margin: 55px 0 0 20px;
+  font-size: 14px;
+  line-height: 21.7px;
+  gap: 10px;
+}
+.burger__item-location img {
+  width: 20px;
+  height: 20px;
+}
+.burger__item-phone {
+  display: none;
+  align-items: center;
+  font-size: 14px;
+  line-height: 21.7px;
+  gap: 10px;
+}
+.burger__item-phone a {
+  padding: 0;
+}
+.burger__item-text {
+  padding: 0;
+  letter-spacing: 0.01em;
+  font-family: Gilroy;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21.7px;
+}
+.burger__box {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0 25px 20px;
+  gap: 10px;
+}
+.burger__box .mm-listitem::after {
+  border-bottom-style: none;
+}
+
+@media (max-width: 320px) {
+  .mm-listitem--opened > .mm-listitem__btn:after {
+    right: 12px;
+  }
+  .mm-listitem {
+    font-size: 18px;
+    line-height: 21.6px;
+  }
+  .mm-listitem__text {
+    padding: 7px 0 0 6px;
+  }
+  .mm-listitem:nth-last-child(-n+2):after {
+    border: 0;
+  }
+  .mm-listitem:after {
+    inset-inline-end: 5px;
+    inset-inline-start: 5px;
+  }
+  .mm-btn--next:after {
+    top: -24px;
+    inset-inline-end: 12px;
+  }
+  .burger {
+    top: 50px;
+  }
+  .burger__box {
+    padding: 0 0 0 6px;
+  }
+  .burger__list {
+    padding: 10px;
+  }
+  .burger__item-location {
+    margin: 20px 0 0 0;
+  }
+  .burger__item-phone {
+    display: flex;
+    margin: 20px 0 0 0;
+  }
+  .burger__item_small {
+    display: block;
+  }
+  .burger__item:not(:first-child) {
+    padding: 12px 0;
+  }
+  .burger__item-text {
+    padding: 0;
+    font-size: 14px;
+    line-height: 21.7px;
+  }
+}/*# sourceMappingURL=burger.css.map */
