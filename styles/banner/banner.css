@@ -166,7 +166,7 @@
     flex-wrap: wrap;
   }
   .banner__informantion {
-    max-width: 708px;
+    max-width: 100%;
   }
   .banner__background-img {
     top: 65%;

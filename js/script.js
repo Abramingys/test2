@@ -51,6 +51,7 @@ $(document).ready(function () {
 const contactForm = document.querySelector('#contactForm');
 
 function validateForm() {
+  // Очистка сообщений об ошибках
   document.querySelector('#name-error').innerText = '';
   document.querySelector('#phone-error').innerText = '';
 
@@ -66,6 +67,18 @@ function validateForm() {
     document.querySelector('#phone-error').innerText =
       'Пожалуйста, введите ваш номер.';
     isValid = false;
+  } else {
+    if (name.length < 3) {
+      document.querySelector('#name-error').innerText =
+        'Имя должно содержать минимум 3 буквы.';
+      isValid = false;
+    }
+
+    if (phone.length < 5) {
+      document.querySelector('#phone-error').innerText =
+        'Номер телефона должен содержать минимум 5 символов.';
+      isValid = false;
+    }
   }
 
   return isValid;
